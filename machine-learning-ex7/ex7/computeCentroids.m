@@ -26,7 +26,7 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 for i=1:K
-  centroids(i,:) = sum(X(find(idx == i), :)) / sum(idx == mui)
+  centroids(i,:) = sum(X(find(idx == i), :)) / sum(idx == i);
 end
 
 

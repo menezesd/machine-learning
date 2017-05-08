@@ -24,8 +24,8 @@ idx = zeros(size(X,1), 1);
 for i = 1:size(X,1)
     min_d = inf;
     for j=1:K	
-        diff = X(i,:)' - centroids(j,:)'
-	d = dot(diff, diff);
+        diff = X(i,:)' - centroids(j,:)';
+        d =  dot(diff, diff);
 	if (d < min_d)
 	   idx(i) = j;
 	   min_d = d;
